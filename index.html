@@ -195,8 +195,8 @@
             createDust();     
             setupPostProcessing();
             setupEvents();
-            // await initMediaPipe();
-            initMediaPipe().catch(e => console.log("Bỏ qua lỗi camera"));
+            await initMediaPipe();
+            // initMediaPipe().catch(e => console.log("Bỏ qua lỗi camera"));
             
             const loader = document.getElementById('loader');
             loader.style.opacity = 0;
